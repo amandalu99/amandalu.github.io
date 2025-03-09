@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda Lu | AI Projects</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .ai-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: linear-gradient(to bottom right, white, #fff9fb);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+    
+    .ai-project {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+    
+    .ai-project:last-child {
+      border-bottom: none;
+    }
+    
+    .ai-project::before {
+      content: "✿";
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      color: var(--primary-color);
+      opacity: 0.3;
+      font-size: 1.5rem;
+    }
+    
+    .ai-project h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    
+    .tech-tag {
+      background: #ffecf4;
+      color: #666;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+    }
+    
+    #ai-projects::after {
+      content: "";
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      width: 100px;
+      height: 100px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23ffcfe6" opacity="0.3" d="M50 0 C 50 50, 100 50, 50 100 C 50 50, 0 50, 50 0" /></svg>');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Amanda Lu</div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="ai-projects" style="margin-top: 100px;">
+    <div class="container">
+      <h2 class="section-title">AI Projects Portfolio</h2>
+      
+      <div class="ai-content">
+        <div class="ai-project">
+          <h3>Customer Sentiment Analysis Dashboard</h3>
+          <p>Developed an NLP-powered dashboard that analyzes customer feedback from multiple channels to identify trends and sentiment patterns. The system processes text data using transformer models to extract key insights and present them in an intuitive visualization interface.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">BERT</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">D3.js</span>
+            <span class="tech-tag">AWS</span>
+          </div>
+          <p>This project resulted in a 30% improvement in customer service response time by quickly identifying critical issues and prioritizing responses based on sentiment scores.</p>
+        </div>
+        
+        <div class="ai-project">
+          <h3>Sales Forecasting Model</h3>
+          <p>Created a time-series forecasting system that combines historical sales data with external factors like seasonal trends, market conditions, and promotional activities. The model uses an ensemble of LSTM networks and traditional statistical methods to generate accurate predictions.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Tableau</span>
+          </div>
+          <p>The forecasting model achieved 92% accuracy in predicting monthly sales figures, enabling more effective inventory management and resource allocation.</p>
+        </div>
+        
+        <div class="ai-project">
+          <h3>Automated Document Classification System</h3>
+          <p>Built an intelligent document processing system that automatically categorizes and extracts key information from various business documents including invoices, contracts, and reports. The system leverages computer vision and NLP techniques to understand document structure and content.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">spaCy</span>
+            <span class="tech-tag">FastAPI</span>
+          </div>
+          <p>This automation reduced document processing time by 85% and improved data extraction accuracy to 96%, significantly streamlining operational workflows.</p>
+        </div>
+        
+        <a href="index.html" class="btn primary-btn back-button">Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Amanda Lu. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
